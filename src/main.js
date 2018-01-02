@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
-import Map from './Map.vue'
-import Scene from './Scene.vue'
+import HomeButton from './HomeButton.vue'
+import LocateButton from './LocateButton.vue'
 
 Vue.use(VueRouter)
 
@@ -12,8 +12,8 @@ Vue.use(VueRouter)
 // `Vue.extend()`, or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/map', component: Map },
-  { path: '/scene', component: Scene }
+  { path: '/home-button', component: HomeButton },
+  { path: '/locate-button', component: LocateButton },
 ]
 
 // 3. Create the router instance and pass the `routes` option

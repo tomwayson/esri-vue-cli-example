@@ -3,8 +3,8 @@
     <img src="./assets/logo.png">
     <h1>{{ msg }}</h1>
     <ul>
-      <li><router-link to="/map">2D Map</router-link></li>
-      <li><router-link to="/scene">3D Scene</router-link></li>
+      <li><router-link to="/home-button">Home Button</router-link></li>
+      <li><router-link to="/locate-button">Locate Button</router-link></li>
     </ul>
     <router-view></router-view>
   </div>
@@ -15,7 +15,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'ArcGIS JS API Samples in a Vue.js App'
     }
   }
 }
@@ -23,7 +23,7 @@ export default {
 
 <style>
 /* esri styles */
-@import url('https://js.arcgis.com/4.6/esri/css/main.css');
+@import url('https://js.arcgis.com/3.23/esri/css/esri.css');
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
