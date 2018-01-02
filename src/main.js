@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import { loadScript } from 'esri-loader'
 import App from './App.vue'
 import HomeButton from './HomeButton.vue'
 import LocateButton from './LocateButton.vue'
@@ -23,7 +24,13 @@ const router = new VueRouter({
   routes // short for `routes: routes`
 })
 
+// preload the ArcGIS API
+const options = {
+  url: 'https://js.arcgis.com/3.23/',
+};
+loadScript(options)
 
+// render the app
 new Vue({
   el: '#app',
   router,

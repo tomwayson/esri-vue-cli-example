@@ -10,10 +10,7 @@ import { loadModules } from 'esri-loader';
 export default {
   name: 'home-button',
   mounted: function () {
-    const options = {
-      url: 'https://js.arcgis.com/3.23/',
-    };
-    loadModules(['esri/map', 'esri/dijit/HomeButton'], options)
+    loadModules(['esri/map', 'esri/dijit/HomeButton'])
       .then(([Map, HomeButton]) => {
         // create map with the given options
         const map = new Map(this.$refs.map, {
