@@ -1,6 +1,6 @@
 {
   "name": "esri-vue-cli-example",
-  "description": "An example of how to use esri-loader in an application built with vue-cli",
+  "description": "An example of how to use the ArcGIS API for JavaScript 3.x in a vue-cli application",
   "version": "1.0.0",
   "author": "Tom Wayson <tom@tomwayson.com>",
   "license": "Apache-2.0",
